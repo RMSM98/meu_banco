@@ -1,0 +1,136 @@
+/* style.css */
+
+/* Adicione ao seu CSS existente */
+html, body {
+    height: 100%; /* Garante que o body e html ocupem toda a altura */
+    margin: 0; /* Remove margens padrão */
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(168, 216, 234, 0.7), rgba(0, 95, 115, 0.7)), url('sua-textura-de-agua.png');
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Resto do seu CSS */
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh; /* Garante que a altura mínima do container seja 100% da altura da tela */
+    padding-bottom: 40px; /* Espaço para o rodapé */
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    padding-top: 60px; /* Ajuste o valor conforme necessário */
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente para o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgba(244, 244, 244, 0.9); /* Fundo do menu lateral semitransparente */
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.sidebar a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+    background-color: #ddd;
+}
+
+.footer {
+    background-color: rgba(168, 216, 234, 0.7); /* Cor de fundo igual à do site */
+    color: #fff; /* Mantém o texto branco */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.footer a {
+    color: red; /* Muda a cor dos links para vermelho */
+}
+
+
+.close-menu {
+    background-color: #f4f4f4; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    border: none;
+    padding: 10px;
+    width: 100%; /* Ocupa toda a largura do menu */
+    margin-top: 10px; /* Espaçamento acima */
+    cursor: pointer;
+    display: none; /* Esconder o botão por padrão */
+}
+/*style contatos8*/
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    gap: 15px; /* Espaçamento entre os elementos do formulário */
+    margin-top: 20px; /* Espaço acima do formulário */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #0066cc; /* Cor da borda ao focar */
+    outline: none; /* Remove a borda padrão do navegador */
+}
+
+input[type="submit"] {
+    background-color: #0066cc; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+input[type="submit"]:hover {
+    background-color: #005bb5; /* Cor ao passar o mouse */
+}
+
+/* Banner */
+.header-banner {
+    background-color: #0066cc; /* Cor de fundo para o banner */
+    text-align: center;
+    padding: 20px 0; /* Ajusta a altura do banner */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-banner .logo {
+    max-height: 290px; /* Ajusta o tamanho da logo */
+    width: 1250px;
+}
